@@ -1,3 +1,4 @@
+require 'pry'
 # Provided, don't edit
 require 'directors_database'
 
@@ -35,15 +36,16 @@ end
 
 def movies_with_director_key(name, movies_collection)
   row = 0
-  movies_n_names = []
+  updated_movies = []
   while row < movies_collection.length do 
-     name = :name
     mc_title = movies_collection[row]
-   p :director_name => mc_title
+    
+    # binding.pry
+   pp updated_movies <<  movie_with_director_name(name, mc_title)
     row += 1 
     
   end
-  
+  return updated_movies
 end
   # GOAL: For each Hash in an Array (movies_collection), provide a collection
   # of movies and a directors name to the movie_with_director_name method
