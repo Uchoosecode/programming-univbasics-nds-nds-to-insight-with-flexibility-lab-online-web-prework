@@ -34,6 +34,17 @@ end
 # Your code after this point
 
 def movies_with_director_key(name, movies_collection)
+  row = 0
+  movies_n_names = []
+  while row < movies_collection.length do 
+     name = :name
+    mc_title = movies_collection[row]
+   p :director_name => mc_title
+    row += 1 
+    
+  end
+  
+end
   # GOAL: For each Hash in an Array (movies_collection), provide a collection
   # of movies and a directors name to the movie_with_director_name method
   # and accumulate the returned Array of movies into a new Array that's
@@ -48,7 +59,6 @@ def movies_with_director_key(name, movies_collection)
   # Array of Hashes where each Hash represents a movie; however, they should all have a
   # :director_name key. This addition can be done by using the provided
   # movie_with_director_name method
-end
 
 
 def gross_per_studio(collection)
