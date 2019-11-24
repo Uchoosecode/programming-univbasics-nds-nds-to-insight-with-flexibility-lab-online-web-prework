@@ -59,7 +59,7 @@ def gross_per_studio(collection)
    if studios_gross[studio_name] 
      studios_gross[studio_name] = 0 
    end
-     p  studios_gross[studio_name] += studio_total
+      studios_gross[studio_name] += studio_total
        
   row += 1 
   end
