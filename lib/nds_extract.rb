@@ -63,7 +63,7 @@ def gross_per_studio(collection)
      studios_gross[studio_name] = 0 
      
      studios_gross[studio_name] += studio_total
-  binding.pry
+  # binding.pry
    end
        
   row += 1 
