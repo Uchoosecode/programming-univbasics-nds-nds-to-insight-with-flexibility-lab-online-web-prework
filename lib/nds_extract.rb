@@ -52,7 +52,6 @@ def gross_per_studio(collection)
   row = 0 
   studios_gross = {}
   while row < collection.length do 
-  binding.pry
   studio_name = collection[row][:studio]
   studio_total = collection[row][:worldwide_gross]
    
@@ -64,6 +63,7 @@ def gross_per_studio(collection)
      studios_gross[studio_name] = 0 
      
      studios_gross[studio_name] += studio_total
+  binding.pry
    end
        
   row += 1 
