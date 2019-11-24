@@ -57,9 +57,14 @@ def gross_per_studio(collection)
   studio_total = collection[row][:worldwide_gross]
    
    if studios_gross[studio_name] 
-     studios_gross[studio_name] = 0 
-   end
       studios_gross[studio_name] += studio_total
+      
+    else
+      
+     studios_gross[studio_name] = 0 
+     
+     studios_gross[studio_name] += studio_total
+   end
        
   row += 1 
   end
